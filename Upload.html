@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 justify-between group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div>
+        <div class="flex absolute top-0 left-0 h-full w-full flex-col justify-end items-stretch bg-[#141414]/40">
+          <div class="flex flex-col items-stretch bg-slate-50">
+            <button class="flex h-5 w-full items-center justify-center"><div class="h-1 w-9 rounded-full bg-[#cedbe8]"></div></button>
+            <div class="flex-1">
+              <div class="flex items-center bg-slate-50 p-4 pb-2 justify-between">
+                <div class="text-[#0d141c] flex size-12 shrink-0 items-center" data-icon="X" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">CSV-Import</h2>
+              </div>
+              <div class="flex flex-col gap-3 p-4">
+                <div class="flex gap-6 justify-between"><p class="text-[#0d141c] text-base font-medium leading-normal">Step 1 of 4</p></div>
+                <div class="rounded bg-[#cedbe8]"><div class="h-2 rounded bg-[#0a65c1]" style="width: 25%;"></div></div>
+              </div>
+              <h1 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-3 pt-5">Import your catalog</h1>
+              <p class="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                Upload a CSV file containing your product data. Ensure the file is properly formatted with headers matching the required fields.
+              </p>
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">File</p>
+                  <input
+                    placeholder="Choose file"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#0d141c] focus:outline-0 focus:ring-0 border border-[#cedbe8] bg-slate-50 focus:border-[#cedbe8] h-14 placeholder:text-[#49739c] p-[15px] text-base font-normal leading-normal"
+                    value=""
+                  />
+                </label>
+              </div>
+              <p class="text-[#49739c] text-sm font-normal leading-normal pb-3 pt-1 px-4">File must be a CSV file and less than 10MB</p>
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Shopify Link</p>
+                  <input
+                    placeholder="Shopify-Link eingeben"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#0d141c] focus:outline-0 focus:ring-0 border border-[#cedbe8] bg-slate-50 focus:border-[#cedbe8] h-14 placeholder:text-[#49739c] p-[15px] text-base font-normal leading-normal"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-14 justify-between">
+                <p class="text-[#0d141c] text-base font-normal leading-normal flex-1 truncate">Vorschau aktivieren</p>
+                <div class="shrink-0">
+                  <label
+                    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#e7edf4] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-[#0a65c1]"
+                  >
+                    <div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+                    <input type="checkbox" class="invisible absolute" />
+                  </label>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 p-4">
+                <div class="flex gap-6 justify-between"><p class="text-[#0d141c] text-base font-medium leading-normal">Fortschritt:</p></div>
+                <div class="rounded bg-[#cedbe8]"><div class="h-2 rounded bg-[#0a65c1]" style="width: 60%;"></div></div>
+              </div>
+              <div class="flex justify-stretch">
+                <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-end">
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-bold leading-normal tracking-[0.015em]"
+                  >
+                    <span class="truncate">Abbrechen</span>
+                  </button>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-[#0a65c1] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+                  >
+                    <span class="truncate">Import ▶</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div><div class="h-5 bg-slate-50"></div></div>
+    </div>
+  </body>
+</html>
